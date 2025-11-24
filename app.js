@@ -1,4 +1,4 @@
-const apiKey = "770666dbf24377657c25968dff3e8846"; // Replace with your OpenWeather API key
+const apiKey = "770666dbf24377657c25968dff3e8846"; 
 
 let currentTempCelsius = null;
 let isCelsius = true;
@@ -26,7 +26,6 @@ async function getWeather() {
         const data = await response.json();
         errorMsg.textContent = "";
 
-        // Extract values
         const temp = data.main.temp;
         const humidity = data.main.humidity;
         const wind = data.wind.speed;
@@ -82,3 +81,4 @@ function updateBackground(condition) {
         document.body.style.background = "linear-gradient(to bottom, #6ec6ff, #4a90e2)";
     }
 }
+
